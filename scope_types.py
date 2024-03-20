@@ -1,0 +1,3 @@
+# Global scope
+# Function Scope
+
