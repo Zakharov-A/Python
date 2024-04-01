@@ -6,16 +6,12 @@
 # print(posts_ids[1])
 # print(posts_ids[-1])
 
-# TypeError: 'tuple'
-# object does not support item assignment
+# ----
 
 # my_nums = (10, 5, 100, 0)
 # print(type(my_nums))
-# del my_nums[1] # TypeError: 'tuple'
-# object doesn't support item deletion
-# my_nums[0] = 6
-# # TypeError: 'tuple' object does not
-# # support item assignment
+
+# ----
 
 # Lists and dictionaries inside a tuple
 
@@ -39,6 +35,8 @@
 # del users[0]['user_id']
 # print(users)
 
+# ----
+
 # using variables in tuples
 
 # my_fruit = 'apple'
@@ -50,6 +48,8 @@
 # print(all_fruits) # ('apple', 'banana', 'lime')
 # print(all_fruits[1])
 
+# ----
+
 # union of tuples
 
 # internal_ids = (151, 245)
@@ -60,12 +60,16 @@
 # print(all_ids)
 # # (151, 245, 624, 451, 941)
 
+# ----
+
 # internal_ids = (151, 245)
 # external_ids = (624, 451, 941)
 
 # all_ids = internal_ids.__add__(external_ids)
 
 # print(all_ids)
+
+# ----
 
 # tuple methods
 # count
@@ -77,16 +81,20 @@
 
 # print(posts_ids_list)
 # print(posts_ids)
+# print(posts_ids.count(245))
 
 # posts_ids_tuple = tuple(posts_ids_list)
 
 # print(posts_ids_tuple)
+
+# ----
 
 # index
 
 # converting a tuple to a list
 
 # my_nums = (10, 5, 100, 0, 5, 5)
+# print(my_nums.index(5, 2))
 
 # my_list = list(my_nums)
 
@@ -105,6 +113,8 @@
 
 # print(my_touple) # ('a', 'b', 'c', 'd')
 
+# ----
+
 # my_touple_dictionaries = tuple(
 #     {
 #         'first': 1,
@@ -114,6 +124,8 @@
 # )
 
 # print(my_touple_dictionaries)
+
+# ----
 
 tuple_one = (11, True, 'Hallo')
 tuple_two = ('red', 'zed', 'bob')

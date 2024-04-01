@@ -21,6 +21,7 @@
 # # True
 # print(id(my_motorbike) == id(other_motorbike))
 
+# ----
 
 # changing 
 # and deleting values in a dictionary
@@ -36,7 +37,7 @@
 
 
 # print(my_motorbike['full price'])
-# print(dir(my_motorbike))
+# # print(dir(my_motorbike))
 
 # print(my_motorbike['full price'])
 
@@ -47,8 +48,8 @@
 # print(my_motorbike)
 
 # print(my_motorbike['brand'])
-# time 5:00:05
-# using variables in dictionaries 
+# # time 5:00:05
+# # using variables in dictionaries 
 
 # my_motorbike['full price'] = 50000
 
@@ -84,15 +85,20 @@
 #     'engine_vol': 1.2,
 #     'price_info': {
 #         'price': 40000,
-#         'is_available': True,
+#         'is_available': {
+#             'first_state': 'Berlin',
+#             'second_state': 'Oschersleben'
+
+#         },
 #     }
 # }
 
 # print(my_motorbike['price_info']['price'])
-# # 25000
-# print(my_motorbike['price_info']['is_available'])
-# # True
+# # # 25000
+# print(my_motorbike['price_info']['is_available']['second_state'])
+# # # True
 
+# ----
 
 # my_motorbike = {
 #     'brand': 'Ducati Verona',
@@ -113,29 +119,24 @@
 # # True
 # print(my_motorbike['price_info']['is_available']['one'])
 
+# ----
+
 # brand = 'Ducati'
 # bike_price = 25000
 # engine_volume = 1.2
+# brand_bike = 'brand'
 
 # my_motorbike = {
-    # 'brand': brand,
-    # 'price': bike_price,
-    # 'engine_volume': engine_volume,
+#     brand_bike: brand,
+#     'price': bike_price,
+#     'engine_volume': engine_volume,
 # }
 
-# print(my_motorbike)
-# {'brand': 'Ducati', 'price': 25000, 1.2: 1.2}
+# print(my_motorbike[brand_bike])
 
 # print(len(my_motorbike))
-# 3
 
-# del my_motorbike['price']
-
-# print(my_motorbike)
-
-# print(len(my_motorbike))
-# 2
-
+# ----
 
 brand = 'Ducati'
 bike_prace = 25000
@@ -148,7 +149,7 @@ my_motorbike = {
 }
 
 print(my_motorbike)
-# {'brand': 'Ducati', 'price': 25000, 'engine_vol': 1.2}
+{'brand': 'Ducati', 'price': 25000, 'engine_vol': 1.2}
 
 # Dictionary length
 print(len(my_motorbike))
