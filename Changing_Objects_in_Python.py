@@ -1,17 +1,26 @@
+# Addresses of immutable objects
+
+# print(id(10))
+# a = 10
+
+# print(id(a))
+
+# ----
+
 # Changing list
 
 # my_list = [1, 2, 3]
 # print(id(my_list))
-# # 2489680711936
 
 # other_list = [1, 2, 3]
 # print(id(other_list))
-# # 2489680713856
+
 # other_list.append(4)
 # print(id(other_list))
 
 # print(id([1, 2, 3]))
-# # 2489681032000
+
+# ----
 
 # Changing dictionaries
 
@@ -27,10 +36,12 @@
 # print(id(info_copy))
 
 # info['reviews_qty'] = 5
-# info_copy['reviews_qty'] = 100
 
 # print(id(info))
+# print(info_copy)
 # print(id(info_copy))
+
+# ----
 
 # my_info = {
 #     'name': 'Bogdan',
@@ -47,6 +58,9 @@
 
 # print(id(other_info))
 # print(other_info)
+# print(my_info)
+
+# ----
 
 # How to avoid altering copies
 
@@ -67,28 +81,28 @@
 
 # Nested mutable objects
 
-# info = {
-#     'name': 'Bogdan',
-#     'is_instructor': True,
-#     'reviews': [],
-# }
+info = {
+    'name': 'Bogdan',
+    'is_instructor': True,
+    'reviews': [],
+}
 
-# info_copy = info.copy()
+info_copy = info.copy()
 
-# info_copy['reviews'].append('Great course!')
+info_copy['reviews'].append('Great course!')
 
-# print(info)
-# print(id(info))
+print(info)
+print(id(info))
 
-# print(info_copy)
-# print(id(info_copy))
+print(info_copy)
+print(id(info_copy))
 
-# info_copy['status'] = 'red!'
+info_copy['status'] = 'red!'
 
-# print(info)
-# print(info_copy)
+print(info)
+print(info_copy)
 
-# deepcopy
+
 
 
 

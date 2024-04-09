@@ -13,7 +13,7 @@ info_deepcopy = deepcopy(info)
 info_deepcopy['reviews'].append('Great course!')
 info_deepcopy['reviews'].append('Super!')
 info_deepcopy['new_key'] = 55
-info['reviews'].append('Super')
+info['reviews'].append('Hello')
 info['new_key'] = 10
 
 print(info)
