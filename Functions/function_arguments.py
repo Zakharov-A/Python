@@ -68,18 +68,18 @@
 # # Bogdan wrote 25 posts
 
 
-def get_posts_info(**person):
-    print(person)
-    print(type(person))
-    info = f"{person['name']} wrote {person['posts_qty']} posts"
-    return info
+# def get_posts_info(**person):
+#     print(person)
+#     print(type(person))
+#     info = f"{person['name']} wrote {person['posts_qty']} posts"
+#     return info
 
-info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
-print(info)
-print(type(info))
+# info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
+# print(info)
+# print(type(info))
 
-list_1 = ['Bogdan', 'Semen']
-list_2 =[20, 30]
+# list_1 = ['Bogdan', 'Semen']
+# list_2 =[20, 30]
 
-info = get_posts_info(name=list_1, posts_qty=list_2, id=1351)
+# info = get_posts_info(name=list_1, posts_qty=list_2, id=1351)
 
