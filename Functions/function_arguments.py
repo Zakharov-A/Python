@@ -1,3 +1,5 @@
+# positional arguments
+
 # def sum_nums(a, b):
 #     c = a + b
 #     return c
@@ -18,7 +20,9 @@
 # # TypeError: sum_nums() missing 2
 # # required positional arguments: 'a' and 'b'
 
-# # combining arguments into a tuple # #
+# ----
+
+# combining arguments into a tuple # #
 
 # def sum_nums(*args):
 #     print(args)
@@ -29,7 +33,7 @@
 # print(sum_nums(2, 3, 7))
 # print(sum_nums())
 
-# # positional arguments
+# -----
 
 # def get_posts_info(name, posts_qty):
 #     info = f"{name} wrote {posts_qty} posts"
@@ -38,9 +42,10 @@
 # info = get_posts_info('Bogdan', 25)
 # print(info)
 # print(type(info))
-# # Bogdan wrote 25 posts
 
-# # keyword arguments
+# ----
+
+# keyword arguments
 
 # def get_posts_info(name, posts_qty):
 #     info = f"{name} wrote {posts_qty} posts"
@@ -50,7 +55,9 @@
 # print(info)
 # print(type(info))
 
-# # combining arguments into a dictionary
+# ----
+
+# combining arguments into a dictionary
 
 # def get_posts_info(**person):
 #     print(person)
@@ -65,21 +72,16 @@
 
 # info = get_posts_info(name='Bogdan', posts_qty=25)
 # print(info)
-# # Bogdan wrote 25 posts
 
+# ----
 
-# def get_posts_info(**person):
-#     print(person)
-#     print(type(person))
-#     info = f"{person['name']} wrote {person['posts_qty']} posts"
-#     return info
+def get_posts_info(**person):
+    print(person)
+    print(type(person))
+    info = f"{person['name']} wrote {person['posts_qty']} posts"
+    return info
 
-# info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
-# print(info)
-# print(type(info))
-
-# list_1 = ['Bogdan', 'Semen']
-# list_2 =[20, 30]
-
-# info = get_posts_info(name=list_1, posts_qty=list_2, id=1351)
+info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
+print(info)
+print(type(info))
 
