@@ -11,7 +11,9 @@ from datetime import date
 # print(mult_by_factor(value=3, multiplier=4))
 # # 12
 
-# # variant 1 
+# ----
+
+# variant 1 
 
 # def get_weekday():
 #     return date.today().strftime('%A')
@@ -28,18 +30,20 @@ from datetime import date
 #     'author': 'Bogdan',
 # }
 
-# post_with_weekday = create_new_post(initial_post, 'Monday')
+# post_with_weekday = create_new_post(initial_post)
 
 # print(post_with_weekday)
-# # {'id': 243, 'author': 'Bogdan', 'created_on_weekday': 'Friday'}
+# {'id': 243, 'author': 'Bogdan', 'created_on_weekday': 'Friday'}
 
 # print(initial_post)
 # # {'id': 243, 'author': 'Bogdan'}
 
+# ----
+
 # variant 2
 
 def get_weekday():
-    return date.today().strftime('%A')
+    return date.today().strftime('%A %d.%m.%Y')
 
 
 def create_new_post(post, weekday=get_weekday()):
@@ -53,10 +57,10 @@ initial_post = {
     'author': 'Bogdan',
 }
 
-post_with_weekday = create_new_post(post=initial_post, weekday='Monday')
+post_with_weekday = create_new_post(post=initial_post)
 
 print(post_with_weekday)
 # {'id': 243, 'author': 'Bogdan', 'created_on_weekday': 'Monday'}
 
-print(initial_post)
-# {'id': 243, 'author': 'Bogdan'}
+# print(initial_post)
+# # {'id': 243, 'author': 'Bogdan'}
