@@ -3,13 +3,29 @@
 # a = 10
 
 # def my_fn():
+#     a = True
+#     b = 15
+#     print(a)
+#     print(b)
+
+# my_fn()
+
+# print(a)
+
+# ----
+
+# a = 10
+
+# def my_fn():
 #     global a
 #     a = 15
 
 
 # print(a)
 # my_fn()
-# print(a)    
+# print(a) 
+
+# ----
 
 c = 5
 
@@ -21,4 +37,3 @@ def my_fn(a, b):
 
 my_fn('abc', 'xyz')
 print(dir())
-

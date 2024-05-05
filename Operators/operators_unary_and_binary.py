@@ -1,6 +1,7 @@
 # Unary operator
 # - my_number
 # + my_number
+# not is_activated
 
 # Example 1
 
