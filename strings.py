@@ -25,29 +25,29 @@
 
 # print(my_name[3:])
 
-my_comment = "This is my short comment"
+# my_comment = "This is my short comment"
 
-print(len(my_comment))
+# print(len(my_comment))
 
-print(my_comment.replace('short', 'long'))
+# print(my_comment.replace('short', 'long'))
 
-print(my_comment)
+# print(my_comment)
 
-print(my_comment.count('i'))
+# print(my_comment.count('i'))
 
-print(my_comment[0])
-print(my_comment[-1])
-print(my_comment[:4])
-print(my_comment[4])
-print(my_comment[5])
+# print(my_comment[0])
+# print(my_comment[-1])
+# print(my_comment[:4])
+# print(my_comment[4])
+# print(my_comment[5])
 
-print(my_comment.count('is'))
+# print(my_comment.count('is'))
 
-my_slice = my_comment[4:18]
+# my_slice = my_comment[4:18]
 
-print(my_slice)
+# print(my_slice)
 
-print(type(my_slice))
+# print(type(my_slice))
 
 # my_name = 'Bogdan'
 
@@ -86,3 +86,19 @@ print(type(my_slice))
 
 # string methods
 
+# f-strings
+
+hello = 'Hello'
+world = 'World'
+
+greeting = f"{hello} {world}"
+
+print(greeting)
+
+my_name = 'Jimmy'
+my_hobby = 'running'
+time = 8
+
+info = f"{my_name} likes {my_hobby} at {time} o'clock"
+
+print(info)
