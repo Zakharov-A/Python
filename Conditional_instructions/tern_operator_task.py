@@ -14,14 +14,14 @@
 
 # Task 1
 
-# my_img = ('2080', '1600')
+my_img = ('2080', '1600')
 
-# if len(my_img) == 2:
-#     info = f"{my_img[0]}x{my_img[1]}"
-# else:
-#     info = "Incorrect image formatting"    
+if len(my_img) == 2:
+    info = f"{my_img[0]}x{my_img[1]}"
+else:
+    info = "Incorrect image formatting"    
 
-# print(info)
+print(info)
 
  # Task 2
 
