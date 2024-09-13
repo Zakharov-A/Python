@@ -149,7 +149,7 @@ my_motorbike = {
 }
 
 print(my_motorbike)
-{'brand': 'Ducati', 'price': 25000, 'engine_vol': 1.2}
+# {'brand': 'Ducati', 'price': 25000, 'engine_vol': 1.2}
 
 # Dictionary length
 print(len(my_motorbike))

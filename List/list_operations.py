@@ -176,16 +176,29 @@ ratings = [2.5, 5.0, 4.3, 3.7]
  
 # Task 2
 
-my_list_1 = [1, 2, 3]
-my_list_2 = ['hi', 'hallo', 'Guten Tag']
+# my_list_1 = [1, 2, 3]
+# my_list_2 = ['hi', 'hallo', 'Guten Tag']
 
-my_list_sum = my_list_1 + my_list_2
+# my_list_sum = my_list_1 + my_list_2
 
-print(my_list_sum)
+# print(my_list_sum)
 
-print(my_list_1.__add__(my_list_2))
+# print(my_list_1.__add__(my_list_2))
 
-print(my_list_1)
-print(my_list_2)
+# print(my_list_1)
+# print(my_list_2)
+
+# Task 3
+
+my_first_lilt = ['apple', 'banana', 'orange']
+
+my_second_list = ['kiwi', 'potato', 'radish']
+
+my_full_list = my_second_list.copy() + my_first_lilt.copy()
+
+print(my_full_list)
+print(my_first_lilt)
+print(my_second_list)
+
 
 

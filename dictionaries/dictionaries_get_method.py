@@ -1,10 +1,11 @@
-my_motorbike = {
-    'brand': 'Ducati',
-    'price': 25000,
-    'engine_volume': 1.2,
-}
-print(my_motorbike)
-print(my_motorbike.get('model'))
+# my_motorbike = {
+#     'brand': 'Ducati',
+#     'price': 25000,
+#     'engine_volume': 1.2,
+# }
+# print(my_motorbike)
+# print(my_motorbike['price'])
+# print(my_motorbike.get('model'))
 
 
 # ----
@@ -73,9 +74,21 @@ my_list = [('first', 0), ['second', True,]]
 my_str = [('first', 0), ['second', True]]
 
 my_dict = dict(my_str)
+print(my_dict)
+print(type(my_dict))
+
 my_dict = dict(my_list)
+print(my_dict)
+print(type(my_dict))
+print(my_dict.get('first'))
+
+my_dict['third'] = 500
 
 print(my_dict)
-print(my_str)
+
+del my_dict['first']
+
+print(my_dict)
+
 
 
