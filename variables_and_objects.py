@@ -1,32 +1,38 @@
-# my_country = 'Deutschland'
+my_country = 'Deutschland'
 
-# print(my_country)
-# print(id(my_country))
+print(my_country)
+print(id(my_country))
 
-# my_home = my_country
+my_home = my_country
 
-# print(my_home)
+print(my_home)
+print(id(my_home))
+
+your_country = 'Deutschland'
+
+print(id(your_country))
+
+# my_home = 'Deutschland'
+
 # print(id(my_home))
 
-my_home = 'Deutschland'
+# my_home_2 = my_home
 
-print(id(my_home))
+# print(id(my_home_2))
 
-my_home_2 = my_home
+# my_home = 10
 
-print(id(my_home_2))
-
-my_home = 10
-
-print(id(my_home))
+# print(id(my_home))
 
 
-print(id(10))
+# print(id(10))
 
-my_num = 100
+# my_num = 100
 
-print(id(my_num))
+# print(id(my_num))
 
-other_num = my_num
+# other_num = my_num
 
-print(id(other_num))
+# print(id(other_num))
+
+# print(id(100))

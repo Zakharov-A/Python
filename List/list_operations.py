@@ -13,7 +13,7 @@
 
 # arithmetic operations in lists
 
-# ratings = [2.5, 5.0, 4.3, 3.7]
+ratings = [2.5, 5.0, 4.3, 3.7]
 
 # print(min(ratings)) # 2.5
 # print(max(ratings)) # 5.0
@@ -149,29 +149,29 @@
 
 # ---- Tasks 1
 
-my_list = [1, True, 5.6, 'Hi', [1, 2, 3]]
+# my_list = [1, True, 5.6, 'Hi', [1, 2, 3]]
 
-print(my_list)
+# print(my_list)
 
-print(len(my_list))
+# print(len(my_list))
 
-my_list.pop(2)
+# my_list.pop(2)
 
-print(my_list)
+# print(my_list)
 
-print(len(my_list))
+# print(len(my_list))
 
-reversed_list = list(reversed(my_list))
-print(reversed_list)
+# reversed_list = list(reversed(my_list))
+# print(reversed_list)
 
 
-my_new_list = [23, 4.5]
+# my_new_list = [23, 4.5]
 
-my_list = my_list + my_new_list
-print(my_list)
-print(len(my_list))
+# my_list = my_list + my_new_list
+# print(my_list)
+# print(len(my_list))
 
-# ----
+
 # ----
  
 # Task 2

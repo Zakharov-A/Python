@@ -1,3 +1,4 @@
+
 # positional arguments
 
 # def sum_nums(a, b):
@@ -75,13 +76,13 @@
 
 # ----
 
-def get_posts_info(**person):
-    print(person)
-    print(type(person))
-    info = f"{person['name']} wrote {person['posts_qty']} posts"
-    return info
+# def get_posts_info(**person):
+#     print(person)
+#     print(type(person))
+#     info = f"{person['name']} wrote {person['posts_qty']} posts"
+#     return info
 
-info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
-print(info)
-print(type(info))
+# info = get_posts_info(name='Bogdan', posts_qty=25, id=1351)
+# print(info)
+# print(type(info))
 

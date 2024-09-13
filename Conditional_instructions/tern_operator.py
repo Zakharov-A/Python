@@ -31,11 +31,11 @@ info = f"{my_img[0]}x{my_img[1]}" if len(
 
 print(info)
 
-# # ----
+# # # ----
 
-my_img = ('2080')
+# my_img = ('2080')
 
-print(f"{my_img[0]}x{my_img[1]}") if len(
-    my_img) == 2 else print("Incorrect image formatting")
+# print(f"{my_img[0]}x{my_img[1]}") if len(
+#     my_img) == 2 else print("Incorrect image formatting")
 
 

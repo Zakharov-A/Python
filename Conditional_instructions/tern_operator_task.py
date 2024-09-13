@@ -23,10 +23,10 @@ else:
 
 print(info)
 
- # Task 2
+#  # Task 2
 
-my_str = "Very, very, very long string!"
+# my_str = "Very, very, very long string!"
 
-print("String is long" if len(my_str) > 40 else "String is short")
+# print("String is long" if len(my_str) > 40 else "String is short")
    
         

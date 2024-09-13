@@ -48,7 +48,6 @@
 def sum_nums(a, b):
     sum = a + b
     return sum
-    print('Hello')
 
 
 first_num = sum_nums(10, 5)
@@ -56,13 +55,13 @@ print(first_num)
 second_num = sum_nums(50.5, 20)
 print(second_num)
 
-# print(sum_nums(sum_nums(50.5, 20), 30))
+print(sum_nums(sum_nums(50.5, 20), 30))
 
-third_num = sum_nums(sum_nums(50.5, 20), 30)
-print(third_num)
+# third_num = sum_nums(sum_nums(50.5, 20), 30)
+# print(third_num)
 
 
-def sum_none_nums(a, b):
-    sum = a + b
+# def sum_none_nums(a, b):
+#     sum = a + b
 
-print(sum_none_nums(4, 4))
+# print(sum_none_nums(4, 4))

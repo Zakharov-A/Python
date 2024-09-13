@@ -1,5 +1,6 @@
 # print(int('10') + 5)
 # print(str(5) + '10')
+# print(6 + int('4'))
 # print(5 + 4.5)
 # print(True + 7)
 # print(7 + True)
@@ -33,21 +34,21 @@
 
 # ----
 
-int_num = 50
-str_val = 'abc'
+# int_num = 50
+# str_val = 'abc'
 
-print(int_num * str_val)
+# print(int_num * str_val)
 
-print(int_num.__mul__(str_val))
-print(str_val.__rmul__(int_num))
+# print(int_num.__mul__(str_val))
+# print(str_val.__rmul__(int_num))
 
 # ----
 
 
-# float_num = 5.5
-# str_val = 'abc'
+float_num = 5.5
+str_val = 'abc'
 
 # print(float_num * str_val)
 
-# print(float_num.__mul__(str_val))
+print(float_num.__mul__(str_val))
 # print(str_val.__rmul__(float_num))

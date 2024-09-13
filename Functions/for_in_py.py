@@ -1,7 +1,7 @@
-# my_list = [True, 10, 'abc', {}, 67]
+my_list = [True, 10, 'abc', {}, 67]
 
-# for elem in my_list:
-#     print(elem)
+for elem in my_list:
+    print(elem)
 
 # my_object = {
 #         'x': 10,
@@ -20,8 +20,8 @@
 
 #  ---
 
-my_dict = {'id': 324, 'title': 'test'}
+# my_dict = {'id': 324, 'title': 666}
 
-for key in my_dict:
-    print(type(key))
-    print(key, my_dict[key]) 
+# for key in my_dict:
+#     print(type(key))
+#     print(key, my_dict[key]) 

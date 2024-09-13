@@ -62,3 +62,15 @@ new_fruit = 'lime'
 all_fruits = [my_fruit, other_fruit, new_fruit]
 
 print(all_fruits)
+
+all_fruits[0] = "Kiwi"
+
+print(all_fruits)
+
+del all_fruits[0]
+
+print(all_fruits)
+
+
+
+

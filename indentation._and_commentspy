@@ -1,0 +1,23 @@
+# This is a tutorial about indentation 
+# and comments in python
+
+
+def my_name(name):
+    print(name)
+
+
+my_name('Artur')
+
+# ----
+
+
+def full_name(first_name, last_name): #  displays the username
+    full_name = f"User name is: {first_name} {last_name}"
+    return full_name
+
+
+print(full_name('Red', 'Head'))
+
+# ----
+
+

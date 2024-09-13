@@ -1,14 +1,14 @@
 # statements: =, if ..., import ...,  
 
-import datetime     # Импортирование модуля
+import datetime     # Importing a module
 
 print(datetime.MINYEAR)
 print(datetime.MAXYEAR)
 
-my_name = 'Bogdan'  # Присваевание значения
+my_name = 'Bogdan'  # Assigning a value
 
 
-if my_name:         # Условная инструкция
+if my_name:         # Conditional statement
     print(my_name)
 
 
@@ -18,3 +18,4 @@ def my_func(a, b):
 
 
 print(my_func(10, 2))
+

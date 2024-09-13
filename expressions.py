@@ -1,4 +1,4 @@
-# expressions: +, -, >, <, == my_func()
+# expressions: +, -, >, <, ==, my_func()
 # example 1
 
 print(3==2)

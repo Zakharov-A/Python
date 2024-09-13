@@ -1,9 +1,11 @@
-# float_num = 50.5
-# int_num = 5
-# str_val = 'abc'
+float_num = 50.5
+int_num = 5
+str_val = 'abc'
 
-# print(int_num * float_num)
-# print(str_val * int_num)
+print(int_num * float_num)
+print(str_val * int_num)
+
+print("Hello")
 
 # print(int_num.__mul__(float_num))
 # print(float_num.__mul__(str_val))
@@ -22,7 +24,7 @@
 
 # ----
 
-print(float(True))
+# print(float(True))
 # print(str.__doc__)
 
 # ----
