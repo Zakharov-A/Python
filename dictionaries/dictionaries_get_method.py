@@ -80,6 +80,7 @@ print(type(my_dict))
 my_dict = dict(my_list)
 print(my_dict)
 print(type(my_dict))
+print(my_dict['first'])
 print(my_dict.get('first'))
 
 my_dict['third'] = 500
