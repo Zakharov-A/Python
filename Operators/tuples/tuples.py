@@ -103,6 +103,8 @@
 # print(my_list)
 # print(my_nums)
 
+# ----
+
 # my_nums = tuple(my_list)
 
 # print(my_nums)
@@ -127,15 +129,46 @@
 
 # ----
 
-tuple_one = (11, True, 'Hallo')
-tuple_two = ('red', 'zed', 'bob')
+# tuple_one = (11, True, 'Hallo')
+# tuple_two = ('red', 'zed', 'bob')
 
-print(tuple_one + tuple_two)
+# print(tuple_one + tuple_two)
 
-tuple_full = tuple_one.__add__(tuple_two)
+# tuple_full = tuple_one.__add__(tuple_two)
 
-print(tuple_full)
-print(type(tuple_full))
+# print(tuple_full)
+# print(type(tuple_full))
 
+# Practice of corteges
 
+# my_nums = (10, 5, 100, 0, 5, 5)
+
+# index_one = my_nums.index(5)
+# index_two = my_nums.index(5, index_one + 1)
+
+# print(index_two)
+
+# ----
+
+# my_nums = (10, 5, 100, 0, 5, 5)
+
+# my_list = list(my_nums)
+
+# my_list.append(7)
+
+# print(my_nums)
+
+# my_nums = tuple(my_list)
+
+# print(my_nums)
+
+# ----
+
+my_tuple_1 = (12, 14)
+
+my_tuple_2 = (16, 18)
+
+my_tuple_3 = my_tuple_1 + my_tuple_2
+
+print(my_tuple_3)
 
