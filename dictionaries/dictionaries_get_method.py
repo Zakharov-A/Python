@@ -53,43 +53,43 @@
 
 # ----
 
-# my_disk = {}
+my_disk = {}
 
-# my_disk['brand'] = 'Samsung'
-# my_disk['price'] = 80
+my_disk['brand'] = 'Samsung'
+my_disk['price'] = 80
 
-# print(len(my_disk))
+print(len(my_disk))
 
-# new_disk = my_disk.copy()
-# new_disk['type'] = 'ssd'
+new_disk = my_disk.copy()
+new_disk['type'] = 'ssd'
 
-# print(my_disk)
-# print(new_disk)
+print(my_disk)
+print(new_disk)
 
 # ----
 
-my_list = [('first', 0), ['second', True,]]
+# my_list = [('first', 0), ['second', True,]]
 
 
-my_str = [('first', 0), ['second', True]]
+# my_str = [('first', 0), ['second', True]]
 
-my_dict = dict(my_str)
-print(my_dict)
-print(type(my_dict))
+# my_dict = dict(my_str)
+# print(my_dict)
+# print(type(my_dict))
 
-my_dict = dict(my_list)
-print(my_dict)
-print(type(my_dict))
-print(my_dict['first'])
-print(my_dict.get('first'))
+# my_dict = dict(my_list)
+# print(my_dict)
+# print(type(my_dict))
+# print(my_dict['first'])
+# print(my_dict.get('first'))
 
-my_dict['third'] = 500
+# my_dict['third'] = 500
 
-print(my_dict)
+# print(my_dict)
 
-del my_dict['first']
+# del my_dict['first']
 
-print(my_dict)
+# print(my_dict)
 
 
 

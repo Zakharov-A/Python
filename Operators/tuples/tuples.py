@@ -141,26 +141,26 @@
 
 # Practice of corteges
 
-# my_nums = (10, 5, 100, 0, 5, 5)
+my_nums = (10, 5, 100, 0, 5, 5)
 
-# index_one = my_nums.index(5)
-# index_two = my_nums.index(5, index_one + 1)
+index_one = my_nums.index(5)
+index_two = my_nums.index(5, index_one + 1)
 
-# print(index_two)
+print(index_two)
 
 # ----
 
-# my_nums = (10, 5, 100, 0, 5, 5)
+my_nums = (10, 5, 100, 0, 5, 5)
 
-# my_list = list(my_nums)
+my_list = list(my_nums)
 
-# my_list.append(7)
+my_list.append(7)
 
-# print(my_nums)
+print(my_nums)
 
-# my_nums = tuple(my_list)
+my_nums = tuple(my_list)
 
-# print(my_nums)
+print(my_nums)
 
 # ----
 

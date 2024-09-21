@@ -16,6 +16,7 @@
 # my_set = {(10, 10), 5, 15, 15}
 # my_set_2 = set()
 
+# print(my_set)
 # print(my_set_2)
 # print(type(my_set_2))
 
@@ -38,7 +39,8 @@
 # photo_sizes.add('1024x768')
 
 # print(photo_sizes)
-# # {'1024x768', '1920x1080', '800x600'}
+
+# {'1024x768', '1920x1080', '800x600'}
 
 # ----
 
@@ -69,12 +71,15 @@
 # res = nums.issubset(other_nums)
 # res_1 = other_nums.issubset(nums)
 # res_2 = other_nums.issuperset(nums)
+# res_3 = nums.issuperset(other_nums)
 
-# print(res_2)
-# print(res_1)
 # print(res)
+# print(res_1)
+# print(res_2)
+# print(res_3)
 
 # ----
+# Practice sets
 
 # my_set = {'abc', 'd', 'f', 'y'}
 # other_set = {'a', 'f', 'd', 'abc'}
@@ -92,8 +97,8 @@
 # print(my_set.discard('d'))
 # print(my_set)
 # print(my_set.discard('def'))
-# my_set.remove('def') # KeyError: 'def'
-# my_set.remove('y')
+# # my_set.remove('def') # KeyError: 'def'
+# # my_set.remove('y')
 
 # ----
 
