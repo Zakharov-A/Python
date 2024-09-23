@@ -1,5 +1,15 @@
 # Creating Functions
 
+# def sum(a, b):
+#     c = a + b
+#     print(c)
+
+# sum(4, 5)
+# sum(5, 5)
+# print(type(sum))
+
+# ----
+
 # def my_fn(a, b):
 #     a = a + 1
 #     c = a + b
@@ -20,14 +30,16 @@
 
 # res = my_fn(3, 6, 4)
 # print(res)
-# 16
+# # 16
+
+# ----
 
 # Shortest function
 
-# def my_fn():
-#     pass
+def my_fn():
+    pass
 
-# print(my_fn()) # None
+print(my_fn()) # None
 
 # Passing immutable objects
 
@@ -70,18 +82,18 @@
 #  changing external objects
 #  in a function
 
-def increase_person_age(person):
-    person_copy = person.copy()
-    person_copy['age'] += 1
-    return person_copy
+# def increase_person_age(person):
+#     person_copy = person.copy()
+#     person_copy['age'] += 1
+#     return person_copy
 
-person_one = {
-    'name': 'Bob',
-    'age': 21
-}
+# person_one = {
+#     'name': 'Bob',
+#     'age': 21
+# }
 
-new_person = increase_person_age(person_one)
-print(new_person['age']) # 22
-print(person_one['age']) # 21
+# new_person = increase_person_age(person_one)
+# print(new_person['age']) # 22
+# print(person_one['age']) # 21
 
 # ----

@@ -7,18 +7,38 @@
 
 # ----
 
+first_num = 10
+# second_num = first_num
+
+# print(id(first_num))  # 140733238426328
+# print(id(second_num)) # 140733238426328
+
+# second_num += 5
+# print(second_num) # 15
+# print(first_num) # 10
+
+# print(id(second_num)) # 140733238426488
+# print(id(first_num))  # 140733238426328
+# print(id(15))
+
+# ----
+
 # Changing list
 
 # my_list = [1, 2, 3]
 # print(id(my_list))
+# # 2879823073664
 
 # other_list = [1, 2, 3]
 # print(id(other_list))
+# # 2879823075584 (the addresses change with each launch)
 
 # other_list.append(4)
 # print(id(other_list))
+# # 2879823075584 (the addresses change with each launch)
 
 # print(id([1, 2, 3]))
+# # 2879823393728 (the addresses change with each launch)
 
 # ----
 

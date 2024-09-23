@@ -67,15 +67,23 @@
 # ----
 
 
-my_range = range(10, 30, 3)
+# my_range = range(10, 30, 3)
 
-# print(dir(my_range))
+# # print(dir(my_range))
 
-print(my_range.start)
-print(my_range.stop)
-print(my_range.step)
-print(my_range.index(13))
-print(my_range.count(11))
+# print(my_range.start)
+# print(my_range.stop)
+# print(my_range.step)
+# print(my_range.index(13))
+# print(my_range.count(11))
+# print(my_range.count(10))
+# print(list(my_range))
 
-# ----
+# # ----
 
+my_range = range(2, 40, 4)
+my_list = []
+
+for num in my_range:
+    my_list = num
+    print(my_list)

@@ -5,7 +5,7 @@ from copy import deepcopy
 info = {
     'name': 'Bogdan',
     'is_instructor': True,
-    'reviews': [],
+    'reviews': []
 }
 
 info_deepcopy = deepcopy(info)
@@ -19,3 +19,4 @@ info['new_key'] = 10
 print(info)
 
 print(info_deepcopy)
+
