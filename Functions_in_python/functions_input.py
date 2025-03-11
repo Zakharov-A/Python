@@ -1,6 +1,0 @@
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-city = input("Enter your city: ")
-print(name.capitalize(), age, city.upper())
-print(f"Your name is {name}, your age is {age}, your city is {city}")
-print(type(age))
