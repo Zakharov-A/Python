@@ -23,7 +23,8 @@ def main() -> None:
         " 1 - add;\n"
         " 2 - list tasks;\n"
         " 3 - delete task;\n"
-        " 4 - exit program;\n"
+        " 4 - change task\n"
+        " 5 - exit program;\n"
         )
         answer_user: str = input("Your choice: ")
 
@@ -56,7 +57,26 @@ def main() -> None:
                     print("Input error: you must enter a number.")
             else:
                 print("The task list is empty, there is nothing to delete.")
+
         elif answer_user == '4':
+            if to_do:
+                print("List oftasks: ")
+                for i, task in enumerate(to_do, start=1):
+                    print(f"{i}. {task}")
+                try:              
+                    task_number = int(input("Enter the task number to change: ")) - 1
+                    if 0 <= task_number < len(to_do):
+                        task = input("Enter new task: ")
+                        to_do[task_number] = task
+                        save_tasks(FILENAME, to_do)
+                        print(f"Task '{task_number + 1}'  replaced with '{task}'.")
+                    else:
+                        print("Invalid task number.")
+                except ValueError:
+                    print("Input error: you must enter a number.") 
+            else:
+                print("The task list is empty< there is nothing to change.")                      
+        elif answer_user == '5':
             print("The program is complete.")
             break
         else:
