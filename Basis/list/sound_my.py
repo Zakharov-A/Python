@@ -15,15 +15,26 @@ def main() -> None:
     # print(play_list)
 
 
-    def func():
-        my_list_2 = [1, 2, 3, 4]
-        a, b, *c = my_list_2
-        print(my_list_2)
+    # def func():
+    #     my_list_2 = [1, 2, 3, 4]
+    #     a, b, *c = my_list_2
+    #     print(my_list_2)
 
-        a, *b = my_list_2
-        print(my_list_2)
+    #     a, *b = my_list_2
+    #     print(my_list_2)
 
-    func()    
+    # func()  .
+
+
+    play_list = ["sound1", "sound2", "sound3", "sound4", "sound5"]
+    print(play_list)
+    sound_one = play_list.index('sound2')
+    sound_two = play_list.index('sound5')
+    play_list[sound_one], play_list[sound_two] = play_list[sound_two], play_list[sound_one]
+    print(play_list)
+
+    
+
 
 
 main()    

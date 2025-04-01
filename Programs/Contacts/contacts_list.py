@@ -5,7 +5,8 @@ def main() -> None:
         "\n1 - Добавить\n"
         "2 - Удалить\n"
         "3 - Просмотр\n"
-        "4 - Выход из программы\n"
+        "4 - Изменить\n"
+        "5 - Выход из программы\n"
         "\nВведите команду: ")
         print()
         if command == '1':
@@ -24,7 +25,17 @@ def main() -> None:
                 print(f"Имя {name} не найдено")
         elif command == '3':
             for name, phone in contacts.items():
-                print(f"{name} - {phone}")            
+                print(f"{name} - {phone}")
+        elif command == '4':
+            name = input("Введите имя контакта: ")
+            if contacts.get(name):
+                tel = int(input("Введите номер телефона: "))
+                contacts[name] = tel
+            else:
+                print(f"Имя {name} не найдено")
+        elif command == '5':
+            print("Завершение работы программы.")
+            break                              
 
 
 main()    
