@@ -1,10 +1,16 @@
 def main():
-    contacts = {"Petr": 111222, "Lena": 443322, "Andre": 556677}
+    contacts = {
+        "Petr": {'Phone': 111222, 'Email': "petr@kaka.ru"},
+        "Lena": [443322, 'lena@kaka.com'], 
+        "Andre": [556677, 'andrey@kaka.org'],}
     print(contacts)
-    contacts["Petr"] = "112233"
+    contacts["Petr"][0] = 666555
+    contacts['Petr'][1] = 'kind@bigboss.ru'
+    contacts['John'] = {'Phone': 666999, 'Email': "john@kaka.ru"}
     print(contacts)
-    contacts["John"] = 100000
-    print(contacts)
-    print(contacts.get("Dasha", "Error"))
+    print(contacts['Lena'][0], contacts['Lena'][1])
+    print(f"Phone: {contacts['Petr']['Phone']}, Email: {contacts['Petr']['Email']}")
+    
+    
 
 main()    
