@@ -1,16 +1,21 @@
-def main():
-    contacts = {
+def main() -> None:
+    contacts: dict[str, dict[str, int | str]] = {
         "Petr": {'Phone': 111222, 'Email': "petr@kaka.ru"},
-        "Lena": [443322, 'lena@kaka.com'], 
-        "Andre": [556677, 'andrey@kaka.org'],}
-    print(contacts)
-    contacts["Petr"][0] = 666555
-    contacts['Petr'][1] = 'kind@bigboss.ru'
-    contacts['John'] = {'Phone': 666999, 'Email': "john@kaka.ru"}
-    print(contacts)
-    print(contacts['Lena'][0], contacts['Lena'][1])
-    print(f"Phone: {contacts['Petr']['Phone']}, Email: {contacts['Petr']['Email']}")
+        "Lena": {'Phone': 443322, 'Email': 'lena@kaka.com'}, 
+        "Andre":{'Phone': 556677, 'Email': 'andrey@kaka.org'},
+        }
     
-    
+    for name, info in contacts.items():
+        print(f"Name: {name}, Phone: {info['Phone']}, Email: {info['Email']}")
 
-main()    
+    print()
+    contacts['Petr']['Phone'] = 666555
+    contacts['Petr']['Email'] = 'kind@bigboss.ru'
+    
+    for name, info in contacts.items():
+        print(f"Name: {name}, Phone: {info['Phone']}, Email: {info['Email']}")
+    
+    
+    
+if __name__ == "__main__":
+    main()          
