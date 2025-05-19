@@ -1,5 +1,9 @@
 def main() -> None:
-    contacts: dict[str, int] =  {"Petr": 111222, "Lena": 443322, "Andre": 556677}
+    contacts: dict[str, dict[str, int | str]] =  {
+        "Petr": {'phone': 112255, 'email': 'petr@mango.com'},
+        "Lena": {'phone': 226688, 'email': 'lena@mango.org'},
+        "Andre": {'phone': 331199, 'email': 'andre@mango.kai'},
+        }
     while True:
         command: str = input(""
         "\n1 - Добавить\n"
@@ -15,7 +19,11 @@ def main() -> None:
                 print("Такое имя уже существует")
                 continue
             tel: int = int(input("Введите телефон: "))
-            contacts[name] = tel
+            email: str = str(input("Введите электронную почту: "))
+            contacts[name] = {}
+            contacts[name]['phone'] = tel
+            contacts[name]['email'] = email
+            print(f"\nДобавлен новый контакт:\nИмя - {name}. Телефон - {tel}. Почта - {email}.")
         elif command == '2':
             name: str = input("Введите имя: ")
             if contacts.get(name):
