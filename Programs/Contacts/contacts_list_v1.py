@@ -1,9 +1,26 @@
+import json 
+import os
+
+def load_contacts(filename: str) -> dict:
+    if os.path.exists(filename):
+        with open(filename, 'r', encoding='utf-8') as file:
+            try:
+                return json.load(file)
+            except json.JSONDecodeError:
+                print("Ошибка чтения файла. Загружаем пустой список контактов")
+                return {}
+    return{}
+
+
+def save_contacts(contacts: dict, filename: str) -> None:
+    with open(filename, 'w', encoding='utf-8') as file:
+        json.dump(contacts, file, indent=4, ensure_ascii=False)
+
 def main() -> None:
-    contacts: dict[str, dict[str, int | str]] =  {
-        "Petr": {'phone': 112255, 'email': 'petr@mango.com'},
-        "Lena": {'phone': 226688, 'email': 'lena@mango.org'},
-        "Andre": {'phone': 331199, 'email': 'andre@mango.kai'},
-        }
+    filename = 'contacts.json'
+
+    contacts: dict[str, dict[str, int | str]] = load_contacts(filename)
+        
     while True:
         command: str = input(""
         "\n1 - Добавить\n"
@@ -18,12 +35,17 @@ def main() -> None:
             if contacts.get(name):
                 print("Такое имя уже существует")
                 continue
-            tel: int = int(input("Введите телефон: "))
+            try:
+                tel: int = int(input("Введите телефон: "))
+            except ValueError:
+                print("Неверный формат номера телефона.") 
+                continue   
             email: str = str(input("Введите электронную почту: "))
-            contacts[name] = {}
-            contacts[name]['phone'] = tel
-            contacts[name]['email'] = email
+
+            contacts[name] = {'phone': tel, 'email': email}
             print(f"\nДобавлен новый контакт:\nИмя - {name}. Телефон - {tel}. Почта - {email}.")
+            save_contacts(contacts, filename)
+
         elif command == '2':
             name: str = input("Введите имя: ")
             if contacts.get(name):
@@ -32,24 +54,30 @@ def main() -> None:
             else:
                 print(f"Имя {name} не найдено")
         elif command == '3':
-            for name, info in contacts.items():
-                phone = info['phone']
-                email = info['email']
-                print(f"{name} - {phone} - {email}")
+            if contacts:
+                for name, info in contacts.items():
+                    print(f"{name} - {info['phone']} - {info['email']}")
+            else:
+                print("Список контактов пуст.")    
+
         elif command == '4':
             name = input("Введите имя контакта: ")
             if contacts.get(name):
-                tel = int(input("Введите номер телефона: "))
-                email: str = str(input("Введите электронную почту: "))
-                contacts[name] = {}
-                contacts[name]['phone'] = tel
-                contacts[name]['email'] = email
+                try:
+                    tel: int = int(input("Введите номер телефона: "))
+                except ValueError:
+                    print("Неверный формат номера телефона.")    
+                email: str = input("Введите электронную почту: ")
+                contacts[name] = {'phone': tel, 'email': email}
                 print(f"\nИзменен контакт:\nИмя - {name}. Телефон - {tel}. Почта - {email}.")
+                save_contacts(contacts, filename)
+
             else:
                 print(f"Имя {name} не найдено")
+                
         elif command == '5':
             print("Завершение работы программы.")
             break                              
 
-
-main()    
+if __name__ == "__main__":
+    main()          
