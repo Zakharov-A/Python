@@ -32,13 +32,19 @@ def main() -> None:
             else:
                 print(f"Имя {name} не найдено")
         elif command == '3':
-            for name, phone in contacts.items():
-                print(f"{name} - {phone}")
+            for name, info in contacts.items():
+                phone = info['phone']
+                email = info['email']
+                print(f"{name} - {phone} - {email}")
         elif command == '4':
             name = input("Введите имя контакта: ")
             if contacts.get(name):
                 tel = int(input("Введите номер телефона: "))
-                contacts[name] = tel
+                email: str = str(input("Введите электронную почту: "))
+                contacts[name] = {}
+                contacts[name]['phone'] = tel
+                contacts[name]['email'] = email
+                print(f"\nИзменен контакт:\nИмя - {name}. Телефон - {tel}. Почта - {email}.")
             else:
                 print(f"Имя {name} не найдено")
         elif command == '5':
