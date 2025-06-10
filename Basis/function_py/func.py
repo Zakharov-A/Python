@@ -16,12 +16,19 @@
 # if __name__ == "__main__":
 #     main()
 
-# def calc(a, b):
+# -----
+
+# def calc(a, b=5):
 #     c = a + b
 #     return c
 
 # result = calc(1, 3)
 # print(result)
+
+# result = calc(1)
+# print(result)
+
+# ----
 
 # def main():
 #     name = "Jora".upper()
@@ -57,7 +64,7 @@
 # def my_func2(*args):
 #     print(args)
 
-# my_list = (1, 2, 3, 'Hi', 4.5)
+# my_list = [1, 2, 3, 'Hi', 4.5]
 # my_func2(*my_list)
 
 # ----
@@ -98,16 +105,16 @@
 
 # ----
 
-def my_func5(a, b=2, *args, **kwargs):
-    print(a)
-    print(b)
-    print(args)
-    print(kwargs)
+# def my_func5(a, b=2, *args, **kwargs):
+#     print(a)
+#     print(b)
+#     print(args)
+#     print(kwargs)
 
 
-my_func5('test', 1, 2, 3, key=1, key2=44)
+# my_func5('test', 1, 2, 3, key=1, key2=44)
 
-print()
+# print()
 
 def my_func6(a, *args, **kwargs):
     print(a)
