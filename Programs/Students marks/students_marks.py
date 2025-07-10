@@ -1,3 +1,31 @@
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+FILE_NAME = 'students_grade.txt'
+FILE_PATH = os.path.join(BASE_DIR, FILE_NAME)
+
+
+def load_students_grade() -> dict[str, int]:
+    students: dict[str, int] = {}
+    if not os.path.exists(FILE_PATH):
+        return students
+    
+    with open(FILE_PATH, 'r', encoding='utf-8') as file:
+        for line in file:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                name, grade_str = line.split(",", maxsplit=1)
+                grade = int(grade_str)
+            except (ValueError, IndexError):
+                continue
+            students[name] = grade
+
+    print(f"Loaded {len(students)} students from {FILE_PATH}")
+    return students            
+
+
 def add_students() -> tuple[str, int]:
     name: str = input("Enter name: ")
     while True:
@@ -21,8 +49,16 @@ def sort_students(students: dict[str, int]) -> None:
     print(good_grade)
     print(bad_grade)
 
+
+def save_students_grade(students: dict[str, int]) -> None:
+    with open(FILE_PATH, 'w', encoding='utf-8') as file:
+        for name, grade in students.items():
+            file.write(f"{name}, {grade}\n")
+    print(f"Saved {len(students)} students to {FILE_PATH}") 
+
+
 def main() -> None:
-    students: dict[str, int] = {}
+    students = load_students_grade()
     while True:
         command = input(
             "\n1 - Add\n" \
@@ -36,6 +72,7 @@ def main() -> None:
         elif command == '2':
             sort_students(students)                           
         elif command == '3':
+            save_students_grade(students)
             print("Termination of the program.") 
             break
         else:

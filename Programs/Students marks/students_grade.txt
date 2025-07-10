@@ -1,0 +1,4 @@
+Lena, 3
+Bob, 2
+John, 4
+Sam, 5
