@@ -18,5 +18,6 @@
 27-28.06.25 - L27 in progress;
 08.07.25 - L27 complete;
 10.07.25 - L28 complete, L29 complete;
-12-13.07.25 - L30 , L31 , L32, L33 ;
+18.07.25 - L30 complete;
+19.07.25 - L31, L32;
 

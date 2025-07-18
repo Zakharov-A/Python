@@ -19,3 +19,4 @@ import my_script as my
 
 my.hello()
 print(my.hello_person('John'))
+print(random())
