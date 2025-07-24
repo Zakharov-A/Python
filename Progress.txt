@@ -20,5 +20,6 @@
 10.07.25 - L28 complete, L29 complete;
 18.07.25 - L30 complete;
 22.07.25 - L31 completed, L32 completed;
-24.07.25 - L33, L34
+24.07.25 - L33 completed, L34 completed, L35 completed;
+26.07.25 - L36;
 
