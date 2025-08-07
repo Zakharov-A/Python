@@ -46,20 +46,64 @@ class Player:
        self._hand.append(card.get_rank())
 
 
+class Dealer(Player):
+    # def get_card(self, cards: DeskCard):
+    #     while self.count < 18:
+    #         self.hand = cards.get_card() 
+      def get_card(self, cards: DeskCard):
+        while self.count < 21:
+            _card = cards.get_card()
+            if _card.get_value() + self.count <= 21:
+                self.hand = _card
+            else:
+                break    
+
 class Game:
     def __init__(self, player_name: str) -> None:
         self.cards = DeskCard()
         self.player = Player(name = player_name)
+        self.dealer = Dealer(name='Dealer')
+
+
+    def print_count(self) -> str:
+        return f"\n{self.player.name}:\n{self.player.hand}\n{self.dealer.name}:\n{self.dealer.hand}"    
+
+
+    def check_count(self) -> None:
+        if self.player.count > 21:
+            print(f"You lost", self.print_count()) 
+        elif self.dealer.count > 21 and self.player.count <= 21:
+            print(f"You won!!!", self.print_count())
+        elif self.dealer.count == self.player.count:
+            print(f"The game ended in a draw!!!", self.print_count())     
+        elif self.dealer.count > self.player.count:
+            print(f"You lost!", self.print_count())
+        elif self.dealer.count < self.player.count:
+            print(f"You won!", self.print_count())    
+           
+                       
 
 
     def start(self) -> None:
         self.player.hand = self.cards.get_card()
         self.player.hand = self.cards.get_card()
-        print(self.player.hand)
 
+        self.dealer.hand = self.cards.get_card()
+        self.dealer.hand = self.cards.get_card()
+        print(self.player.hand)
+        while self.player.count < 21:
+            answer = input("Do you want get a card? y/n\nYour choice: ")
+            if answer == 'y':
+                self.player.hand = self.cards.get_card()
+                print(self.player.hand)
+            elif answer == 'n':
+                self.dealer.get_card(self.cards)
+                break
+        self.check_count()        
+ 
 
 def main() -> None:
-    name = input("Your name ")
+    name = input("Your name: ")
     game = Game(name)
     game.start()
 
