@@ -54,22 +54,50 @@
 ###
 
 
-def error_handler(fun):
-    def wrapper(*args):
-        rv = 0
-        try:
-            rv = fun(*args)
-        except:
-            print(f"Error in function - {fun.__name__}")
-        return rv
+# def error_handler(fun):
+#     def wrapper(*args):
+#         rv = 0
+#         try:
+#             rv = fun(*args)
+#         except:
+#             print(f"Error in function - {fun.__name__}")
+#         return rv
 
-    return wrapper
-
-
-@error_handler
-def dev(a, b) -> int:
-    return a / b
+#     return wrapper
 
 
-print(dev(10, 2))
-print(dev(10, 0))
+# @error_handler
+# def dev(a, b) -> int:
+#     return a / b
+
+
+# print(dev(10, 2))
+# print(dev(10, 0))
+
+
+permissions = ['user', 'admin']
+
+def check_permission(perm):
+    def wrapper_permission(func):
+        def check_wrapper():
+            if perm not in permissions:
+                raise ValueError("no access")
+            return func()
+        return check_wrapper
+    
+    return wrapper_permission
+
+
+@check_permission('user')
+def any_user():
+    print("there is access")
+
+
+@check_permission('admin')
+def for_admin():
+    print("for admin") 
+
+
+any_user()    
+for_admin()
+
