@@ -2,7 +2,6 @@
 def my_decorator_class(cls):
     class MyCls:
 
-
         def __init__(self, *args, **kwargs):
             self._obj = cls(*args, **kwargs)
 
