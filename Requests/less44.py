@@ -1,7 +1,7 @@
 import requests
 
 
-def download(q: str, p: str):
+def download(q: str, p: str) -> None:
     header = {"Authorization": "s9OfGsrQyEZfjsPQuEbzwBquWUQHFLp5JjHbtrgR6AgzVmEMDxDnIyZY"}
     i = 1
     while i <= int(p):
